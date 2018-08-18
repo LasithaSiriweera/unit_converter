@@ -19,6 +19,10 @@ class WeightViewController: UIViewController {
     // weight converter class
     let weightConverter = WeightConversion()
 
+    enum weightType {
+        case gram, killogram, pound, ounce
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,11 +34,19 @@ class WeightViewController: UIViewController {
     }
 
     //set out values to text fields
-    func setFields(gramValue: Float32){
-        txt_gram.text = String(gramValue)
-        txt_killogram.text = String(weightConverter.gramToKg(weight: gramValue))
-        txt_pound.text = String(weightConverter.gramToPound(weight: gramValue))
-        txt_ounce.text = String(weightConverter.gramToOunce(weight: gramValue))
+    func setFields(gramValue: Float32, type: weightType){
+        if type != .gram {
+          txt_gram.text = String(gramValue)
+        }
+        if type != .killogram {
+            txt_killogram.text = String(weightConverter.gramToKg(weight: gramValue))
+        }
+        if type != .pound {
+            txt_pound.text = String(weightConverter.gramToPound(weight: gramValue))
+        }
+        if type != .ounce {
+           txt_ounce.text = String(weightConverter.gramToOunce(weight: gramValue))
+        }
     }
     
     //clear all text fields
@@ -49,9 +61,7 @@ class WeightViewController: UIViewController {
     @IBAction func convertGram(_ sender: UITextField) {
         if txt_gram.text != nil && txt_gram.text != "" {
             let gramValue = Float32(txt_gram.text!)
-            txt_killogram.text = String(weightConverter.gramToKg(weight: gramValue!))
-            txt_pound.text = String(weightConverter.gramToPound(weight: gramValue!))
-            txt_ounce.text = String(weightConverter.gramToOunce(weight: gramValue!))
+            setFields(gramValue: gramValue!, type: .gram)
         }else{
             clearFields()
         }
@@ -62,9 +72,7 @@ class WeightViewController: UIViewController {
         if txt_killogram.text != nil && txt_killogram.text != "" {
             let kgValue = Float32(txt_killogram.text!)
             let gramValue = weightConverter.KgToGram(weight: kgValue!)
-            txt_gram.text = String(gramValue)
-            txt_pound.text = String(weightConverter.gramToPound(weight: gramValue))
-            txt_ounce.text = String(weightConverter.gramToOunce(weight: gramValue))
+            setFields(gramValue: gramValue, type: .killogram)
         }else{
             clearFields()
         }
@@ -75,9 +83,7 @@ class WeightViewController: UIViewController {
         if txt_pound.text != nil && txt_pound.text != "" {
             let poundValue = Float32(txt_pound.text!)
             let gramValue = weightConverter.PoundToGram(weight: poundValue!)
-            txt_gram.text = String(gramValue)
-            txt_killogram.text = String(weightConverter.gramToKg(weight: gramValue))
-            txt_ounce.text = String(weightConverter.gramToOunce(weight: gramValue))
+            setFields(gramValue: gramValue, type: .pound)
         }else{
             clearFields()
         }
@@ -88,9 +94,7 @@ class WeightViewController: UIViewController {
         if txt_ounce.text != nil && txt_ounce.text != "" {
             let ounceValue = Float32(txt_ounce.text!)
             let gramValue = weightConverter.OunceToGram(weight: ounceValue!)
-            txt_gram.text = String(gramValue)
-            txt_killogram.text = String(weightConverter.gramToKg(weight: gramValue))
-            txt_pound.text = String(weightConverter.gramToPound(weight: gramValue))
+            setFields(gramValue: gramValue, type: .ounce)
         }else{
             clearFields()
         }

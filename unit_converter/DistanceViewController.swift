@@ -10,6 +10,7 @@ import UIKit
 
 class DistanceViewController: UIViewController {
 
+    //text fileds
     @IBOutlet weak var txt_metre: UITextField!
     @IBOutlet weak var txt_foot: UITextField!
     @IBOutlet weak var txt_yard: UITextField!
