@@ -18,7 +18,7 @@ class DistanceConversion{
         return distance / 0.9
     }
     
-    func metreToK(distance: Float32) -> Float32 {
+    func metreToKm(distance: Float32) -> Float32 {
         return distance * 0.001
     }
     
