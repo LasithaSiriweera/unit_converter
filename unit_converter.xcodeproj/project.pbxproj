@@ -12,6 +12,7 @@
 		E5A98BAF2127EE82003F1D99 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A98BAE2127EE82003F1D99 /* DistanceViewController.swift */; };
 		E5A98BB12127EEC4003F1D99 /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A98BB02127EEC4003F1D99 /* SpeedViewController.swift */; };
 		E5A98BB32127F2E9003F1D99 /* WeightConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A98BB22127F2E9003F1D99 /* WeightConversion.swift */; };
+		E5C9578C21289B2900A10C62 /* tempretureConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C9578B21289B2900A10C62 /* tempretureConversion.swift */; };
 		E5E7865721264C9B00CCF0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7865621264C9B00CCF0D0 /* AppDelegate.swift */; };
 		E5E7865921264C9B00CCF0D0 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7865821264C9B00CCF0D0 /* WeightViewController.swift */; };
 		E5E7865B21264C9B00CCF0D0 /* TempretureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7865A21264C9B00CCF0D0 /* TempretureViewController.swift */; };
@@ -45,6 +46,7 @@
 		E5A98BAE2127EE82003F1D99 /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
 		E5A98BB02127EEC4003F1D99 /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
 		E5A98BB22127F2E9003F1D99 /* WeightConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightConversion.swift; sourceTree = "<group>"; };
+		E5C9578B21289B2900A10C62 /* tempretureConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempretureConversion.swift; sourceTree = "<group>"; };
 		E5E7865321264C9B00CCF0D0 /* unit_converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unit_converter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E7865621264C9B00CCF0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5E7865821264C9B00CCF0D0 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				E5A98BB22127F2E9003F1D99 /* WeightConversion.swift */,
 				E570FEB1212836FF00893710 /* DistanceConversion.swift */,
 				E570FEB321283B6300893710 /* SpeedConversion.swift */,
+				E5C9578B21289B2900A10C62 /* tempretureConversion.swift */,
 			);
 			path = unit_converter;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				E570FEB2212836FF00893710 /* DistanceConversion.swift in Sources */,
 				E5E7865921264C9B00CCF0D0 /* WeightViewController.swift in Sources */,
 				E570FEB421283B6300893710 /* SpeedConversion.swift in Sources */,
+				E5C9578C21289B2900A10C62 /* tempretureConversion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
