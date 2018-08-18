@@ -146,6 +146,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="clearTxtGram:" destination="9pv-A4-QxB" eventType="touchDown" id="5rA-1F-59R"/>
+                                    <action selector="convertGram:" destination="9pv-A4-QxB" eventType="editingChanged" id="Wx2-CH-dHq"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WoZ-Yg-VDl">
                                 <rect key="frame" x="170" y="180" width="185" height="30"/>
@@ -153,6 +157,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="clearPound:" destination="9pv-A4-QxB" eventType="touchDown" id="Pxx-T9-X0R"/>
+                                    <action selector="convertPound:" destination="9pv-A4-QxB" eventType="editingChanged" id="IwZ-EZ-Tv3"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Op4-vf-bHl">
                                 <rect key="frame" x="170" y="230" width="185" height="30"/>
@@ -160,6 +168,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="clearOunce:" destination="9pv-A4-QxB" eventType="touchDown" id="wfU-h4-nBr"/>
+                                    <action selector="convertOunce:" destination="9pv-A4-QxB" eventType="editingChanged" id="kyc-V6-dfe"/>
+                                </connections>
                             </textField>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H38-Rt-iQh">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -169,17 +181,27 @@
                                 </items>
                             </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DN8-30-w6M">
-                                <rect key="frame" x="170" y="130" width="185" height="30"/>
+                                <rect key="frame" x="170" y="126" width="185" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="clearKg:" destination="9pv-A4-QxB" eventType="touchDown" id="CzG-cI-LhF"/>
+                                    <action selector="convertKg:" destination="9pv-A4-QxB" eventType="editingChanged" id="mO8-Vb-Sxl"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Weight" image="second" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="txt_gram" destination="fQ7-N9-mVI" id="Zh2-fi-krH"/>
+                        <outlet property="txt_killogram" destination="DN8-30-w6M" id="lxy-VZ-48B"/>
+                        <outlet property="txt_ounce" destination="Op4-vf-bHl" id="kaN-in-vdv"/>
+                        <outlet property="txt_pound" destination="WoZ-Yg-VDl" id="U2k-0r-HGD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
