@@ -10,27 +10,27 @@ import Foundation
 
 class SpeedConversion{
     
-    func metrePerSecToFeetToMin(speed: Float) -> Float {
-        return speed * 0.3 / 60
+    func metrePerSecToFeetToMin(speed: Float32) -> Float32 {
+        return speed * 196.85
     }
     
-    func metrePerSecToKmPerHour(speed: Float) -> Float {
-        return speed * 1000 / 3600
+    func metrePerSecToKmPerHour(speed: Float32) -> Float32 {
+        return speed * 3.6
     }
     
-    func metrePerSecToMilePerHour(speed: Float) -> Float {
-        return speed * 1600 / 3600
+    func metrePerSecToMilePerHour(speed: Float32) -> Float32 {
+        return speed * 2.23694
     }
     
-    func feetPerMinToMetrePerSec(speed: Float) -> Float {
-        return speed * 0.3 / 60
+    func feetPerMinToMetrePerSec(speed: Float32) -> Float32 {
+        return speed * 0.00508
     }
     
-    func kmPerHourToMetrePerSec(speed: Float) -> Float {
-        return speed * 1000 / 3600
+    func kmPerHourToMetrePerSec(speed: Float32) -> Float32 {
+        return speed * 0.277778
     }
     
-    func milePerHourToMetrePerSec(speed: Float) -> Float {
-        return speed * 1600 / 3600
+    func milePerHourToMetrePerSec(speed: Float32) -> Float32 {
+        return speed * 0.44704
     }
 }

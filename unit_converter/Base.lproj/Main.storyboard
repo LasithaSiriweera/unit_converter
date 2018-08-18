@@ -276,6 +276,11 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="clearMeterPerSec:" destination="v2j-Q2-RT4" eventType="touchDown" id="iSn-Y8-ITO"/>
+                                    <action selector="convertMeterPerSec:" destination="v2j-Q2-RT4" eventType="editingDidEnd" id="QjC-vu-bFt"/>
+                                    <action selector="convertMetrePerSec:" destination="v2j-Q2-RT4" eventType="editingChanged" id="S6x-fw-R45"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Khe-NZ-4hH">
                                 <rect key="frame" x="170" y="130" width="185" height="30"/>
@@ -283,6 +288,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="clearFeetPerMin:" destination="v2j-Q2-RT4" eventType="touchDown" id="YdH-fl-1Zv"/>
+                                    <action selector="convertFeetPerMin:" destination="v2j-Q2-RT4" eventType="editingChanged" id="s85-Ye-euc"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lmr-uo-zRy">
                                 <rect key="frame" x="170" y="180" width="185" height="30"/>
@@ -290,6 +299,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="clearKmPerHour:" destination="v2j-Q2-RT4" eventType="touchDown" id="k8c-SM-mgD"/>
+                                    <action selector="convertKmPerHour:" destination="v2j-Q2-RT4" eventType="editingChanged" id="Iqj-nN-kU6"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y44-eM-Udd">
                                 <rect key="frame" x="170" y="230" width="185" height="30"/>
@@ -297,6 +310,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="clearMilesPerHour:" destination="v2j-Q2-RT4" eventType="touchDown" id="qPX-QF-5Zq"/>
+                                    <action selector="convertMilesPerHour:" destination="v2j-Q2-RT4" eventType="editingChanged" id="pXL-CQ-4kz"/>
+                                </connections>
                             </textField>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KJq-Mp-w0f">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -310,6 +327,12 @@
                         <viewLayoutGuide key="safeArea" id="lpK-cP-LcC"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Speed" image="second" id="r7R-oP-u6Y"/>
+                    <connections>
+                        <outlet property="txt_feetPerMin" destination="Khe-NZ-4hH" id="L8f-PV-MPt"/>
+                        <outlet property="txt_kmPerHour" destination="lmr-uo-zRy" id="d5e-CK-BT0"/>
+                        <outlet property="txt_metrePerSec" destination="Rkr-mj-Aw6" id="K9I-jg-iZI"/>
+                        <outlet property="txt_milesPerHour" destination="Y44-eM-Udd" id="KgV-lc-nU2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8f-cc-FKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
