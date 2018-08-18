@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E570FEB2212836FF00893710 /* DistanceConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570FEB1212836FF00893710 /* DistanceConversion.swift */; };
 		E5A98BAF2127EE82003F1D99 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A98BAE2127EE82003F1D99 /* DistanceViewController.swift */; };
 		E5A98BB12127EEC4003F1D99 /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A98BB02127EEC4003F1D99 /* SpeedViewController.swift */; };
 		E5A98BB32127F2E9003F1D99 /* WeightConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A98BB22127F2E9003F1D99 /* WeightConversion.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E570FEB1212836FF00893710 /* DistanceConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceConversion.swift; sourceTree = "<group>"; };
 		E5A98BAE2127EE82003F1D99 /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
 		E5A98BB02127EEC4003F1D99 /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
 		E5A98BB22127F2E9003F1D99 /* WeightConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightConversion.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				E5A98BAE2127EE82003F1D99 /* DistanceViewController.swift */,
 				E5A98BB02127EEC4003F1D99 /* SpeedViewController.swift */,
 				E5A98BB22127F2E9003F1D99 /* WeightConversion.swift */,
+				E570FEB1212836FF00893710 /* DistanceConversion.swift */,
 			);
 			path = unit_converter;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				E5A98BB12127EEC4003F1D99 /* SpeedViewController.swift in Sources */,
 				E5A98BAF2127EE82003F1D99 /* DistanceViewController.swift in Sources */,
 				E5E7865721264C9B00CCF0D0 /* AppDelegate.swift in Sources */,
+				E570FEB2212836FF00893710 /* DistanceConversion.swift in Sources */,
 				E5E7865921264C9B00CCF0D0 /* WeightViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
