@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5A98BAF2127EE82003F1D99 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A98BAE2127EE82003F1D99 /* DistanceViewController.swift */; };
+		E5A98BB12127EEC4003F1D99 /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A98BB02127EEC4003F1D99 /* SpeedViewController.swift */; };
 		E5E7865721264C9B00CCF0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7865621264C9B00CCF0D0 /* AppDelegate.swift */; };
-		E5E7865921264C9B00CCF0D0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7865821264C9B00CCF0D0 /* FirstViewController.swift */; };
-		E5E7865B21264C9B00CCF0D0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7865A21264C9B00CCF0D0 /* SecondViewController.swift */; };
+		E5E7865921264C9B00CCF0D0 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7865821264C9B00CCF0D0 /* WeightViewController.swift */; };
+		E5E7865B21264C9B00CCF0D0 /* TempretureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7865A21264C9B00CCF0D0 /* TempretureViewController.swift */; };
 		E5E7865E21264C9B00CCF0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E7865C21264C9B00CCF0D0 /* Main.storyboard */; };
 		E5E7866021264C9B00CCF0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E7865F21264C9B00CCF0D0 /* Assets.xcassets */; };
 		E5E7866321264C9B00CCF0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E7866121264C9B00CCF0D0 /* LaunchScreen.storyboard */; };
@@ -35,10 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E5A98BAE2127EE82003F1D99 /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
+		E5A98BB02127EEC4003F1D99 /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
 		E5E7865321264C9B00CCF0D0 /* unit_converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unit_converter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E7865621264C9B00CCF0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5E7865821264C9B00CCF0D0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		E5E7865A21264C9B00CCF0D0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E5E7865821264C9B00CCF0D0 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
+		E5E7865A21264C9B00CCF0D0 /* TempretureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempretureViewController.swift; sourceTree = "<group>"; };
 		E5E7865D21264C9B00CCF0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5E7865F21264C9B00CCF0D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5E7866221264C9B00CCF0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,12 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				E5E7865621264C9B00CCF0D0 /* AppDelegate.swift */,
-				E5E7865821264C9B00CCF0D0 /* FirstViewController.swift */,
-				E5E7865A21264C9B00CCF0D0 /* SecondViewController.swift */,
+				E5E7865821264C9B00CCF0D0 /* WeightViewController.swift */,
+				E5E7865A21264C9B00CCF0D0 /* TempretureViewController.swift */,
 				E5E7865C21264C9B00CCF0D0 /* Main.storyboard */,
 				E5E7865F21264C9B00CCF0D0 /* Assets.xcassets */,
 				E5E7866121264C9B00CCF0D0 /* LaunchScreen.storyboard */,
 				E5E7866421264C9B00CCF0D0 /* Info.plist */,
+				E5A98BAE2127EE82003F1D99 /* DistanceViewController.swift */,
+				E5A98BB02127EEC4003F1D99 /* SpeedViewController.swift */,
 			);
 			path = unit_converter;
 			sourceTree = "<group>";
@@ -262,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5E7865B21264C9B00CCF0D0 /* SecondViewController.swift in Sources */,
+				E5E7865B21264C9B00CCF0D0 /* TempretureViewController.swift in Sources */,
+				E5A98BB12127EEC4003F1D99 /* SpeedViewController.swift in Sources */,
+				E5A98BAF2127EE82003F1D99 /* DistanceViewController.swift in Sources */,
 				E5E7865721264C9B00CCF0D0 /* AppDelegate.swift in Sources */,
-				E5E7865921264C9B00CCF0D0 /* FirstViewController.swift in Sources */,
+				E5E7865921264C9B00CCF0D0 /* WeightViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
