@@ -10,6 +10,8 @@ import Foundation
 
 class WeightConversion{
     
+    static let weightConverter = WeightConversion()
+    private init(){}
 
     func gramToKg(weight:Float32)->Float32{
         return weight * 0.001

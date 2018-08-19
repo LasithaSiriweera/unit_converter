@@ -10,6 +10,9 @@ import Foundation
 
 class tempretureConversion {
     
+    static let tempretureConverter = tempretureConversion()
+    private init(){}
+    
     func celsiusToFahrenheit(tempreture: Float32) -> Float32{
         return (tempreture * 1.8) + 32
     }

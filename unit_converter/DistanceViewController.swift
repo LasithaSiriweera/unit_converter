@@ -17,7 +17,8 @@ class DistanceViewController: UIViewController {
     @IBOutlet weak var txt_killometre: UITextField!
     @IBOutlet weak var txt_mile: UITextField!
     
-    let distanceConverter = DistanceConversion()
+    //distance weight converter object
+    let distanceConverter = DistanceConversion.distanceConverter
     
     enum distanceType {
         case metre, foot, yard, km, mile

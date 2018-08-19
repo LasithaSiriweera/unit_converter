@@ -15,7 +15,8 @@ class TempretureViewController: UIViewController {
     @IBOutlet weak var txt_Fahrenheit: UITextField!
     @IBOutlet weak var txt_kelvin: UITextField!
     
-    let tempretureConverter = tempretureConversion()
+    // tempreture converter object
+    let tempretureConverter = tempretureConversion.tempretureConverter
     
     enum tempretureType {
         case celsius, fahrenhiet, kelvin

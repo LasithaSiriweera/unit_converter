@@ -16,8 +16,8 @@ class WeightViewController: UIViewController {
     @IBOutlet weak var txt_pound: UITextField!
     @IBOutlet weak var txt_ounce: UITextField!
     
-    // weight converter class
-    let weightConverter = WeightConversion()
+    // weight converter object
+    let weightConverter = WeightConversion.weightConverter
 
     enum weightType {
         case gram, killogram, pound, ounce

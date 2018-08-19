@@ -16,7 +16,8 @@ class SpeedViewController: UIViewController {
     @IBOutlet weak var txt_kmPerHour: UITextField!
     @IBOutlet weak var txt_milesPerHour: UITextField!
     
-    let speedConverter = SpeedConversion()
+    //speed converter object
+    let speedConverter = SpeedConversion.speedConverter
     
     enum speedType {
         case mps, fpm, kmh, mph

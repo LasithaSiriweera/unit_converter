@@ -9,6 +9,9 @@
 import Foundation
 
 class DistanceConversion{
+    
+    static let distanceConverter = DistanceConversion()
+    private init(){}
    
     func metreToFoot(distance: Float32)-> Float32{
         return distance / 0.3

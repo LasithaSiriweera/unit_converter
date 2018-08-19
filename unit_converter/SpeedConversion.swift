@@ -10,6 +10,9 @@ import Foundation
 
 class SpeedConversion{
     
+    static let speedConverter = SpeedConversion()
+    private init(){}
+    
     func metrePerSecToFeetToMin(speed: Float32) -> Float32 {
         return speed * 196.85
     }
